@@ -1,0 +1,26 @@
+/* تأثيرات زجاجية مستوحاة من تصاميم آبل */
+.apple-glass {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* تنسيق الزر وتأثير الضغط المرتد */
+.apple-btn-primary {
+    background: linear-gradient(180deg, #2f80ed 0%, #0056b3 100%);
+    box-shadow: 0 4px 15px rgba(0, 86, 179, 0.3);
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.apple-btn-primary:active {
+    transform: scale(0.96);
+    opacity: 0.9;
+}
+
+/* حركة شريط التقدم الدائري التفاعلي مع الانتقال اللوني الناعم */
+.progress-ring-circle {
+    transition: stroke-dashoffset 1s linear, stroke 1s ease-in-out;
+    transform: rotate(-90deg);
+    transform-origin: 50% 50%;
+}
